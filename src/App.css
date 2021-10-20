@@ -1,0 +1,191 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+
+	.app_container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	.content_wrapper {
+		flex: 1;
+		background-color: black;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.about_page,
+.contact_me,
+.my_work,
+.skills_page,
+.home_page {
+	/* background-color: black; */
+	min-height: 100vh;
+}
+.about_page {
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+.about_page p {
+	background-color: #e9ecef;
+	padding: 20px;
+	text-align: center;
+	height: 50rem;
+	width: 55rem;
+	margin-left: 17%;
+	font-size: 16px;
+	line-height: 22px;
+}
+/* --------------SKILLS PAGE START------------- */
+.skills_page {
+	background: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.skills_container {
+	max-width: 100vw;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+.card {
+	position: relative;
+	width: 300px;
+	height: 210px;
+	background: #222;
+	margin: 50px 40px;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+.card .skill_box {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(50px);
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+	transition: 0.5s ease-in-out;
+}
+.card .skill_box .skills_icon {
+	font-size: 5em;
+}
+.card .skill_box .skills_icon_mysql {
+	font-size: 7em;
+}
+.card .skill_box .skills_icon .html {
+	background-color: #ff753b;
+	background-image: linear-gradient(90deg, #ff753b 45%, #ff2525 60%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.card:hover .skill_box {
+	width: 150px;
+	height: 150px;
+	left: -75px;
+	top: (calc 50% -70px);
+}
+.card .skill_name {
+	position: absolute;
+	right: 0;
+	width: calc(100% - 75px);
+	padding: 30%;
+	height: 100%;
+}
+.card .skill_name .h3 {
+	font-size: 1em;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+/* -------------SKILLS PAGE END------------- */
+
+.intro h1 {
+	color: white;
+}
+
+.main_intro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 1%;
+	padding-top: 20%;
+}
+.contact_me_button {
+	color: white;
+	margin: 2rem;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	border: 2px solid white;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	font-family: "Playfair Display", serif;
+	margin-left: 5rem;
+}
+.contact_me_button a {
+	text-decoration: none;
+	color: white;
+}
+
+.author_name {
+	color: cyan;
+	font-family: "Loved by the King", cursive;
+	font-size: 20px;
+}
+.quote {
+	color: white;
+	font-family: "Great Vibes", cursive;
+	font-size: 30px;
+}
+
+

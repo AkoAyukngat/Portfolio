@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav_bar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	background-color: rgba(21, 81, 74);
+	color: white;
+}
+a.Logo2Home {
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
+.navigation_links {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	width: 80%;
+}
+
+.home,
+.skills,
+.projects,
+.about_me,
+.contacts {
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 0;
+}
+.mobile_menu_icon {
+	height: 1em;
+	width: 1em;
+	display: none;
+}
+
+@media screen and (max-width: 780px) {
+	.Logo {
+		display: flex;
+		position: absolute;
+		top: 15px;
+		left: 8.5em;
+	}
+	.navigation_links {
+		display: none;
+	}
+	.mobile_navig_links {
+		position: absolute;
+		display: block;
+		list-style: none;
+		background-color: darkcyan;
+		left: 0;
+		top: 75px;
+		transition: all 0.5s ease-out;
+		width: 100%;
+	}
+	.home,
+	.skills,
+	.projects,
+	.about_me,
+	.contacts {
+		display: flex;
+		justify-content: center;
+		color: white;
+
+		width: 100%;
+		transition: all 0.5s ease;
+	}
+
+	.mobile_menu_icon {
+		display: block;
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		background-color: rgba(21, 81, 74);
+		border: none;
+		outline: none;
+		top: 15px;
+		right: 15px;
+	}
+}
